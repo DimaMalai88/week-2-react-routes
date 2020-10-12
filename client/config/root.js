@@ -83,6 +83,7 @@ export default (props) => {
         <StartupConnected>
           <Switch>
             <Route exact path="/" component={() => <DummyView />} />
+            <Route exact path="/*" component={() => <DummyView />} />
             <Route exact path="/dashboard" component={() => <Home />} />
             <Route exact path="/dashboard/*" component={() => <Home />} />
             <Route exact path="/dashboard/:user" component={() => <Home />} />
